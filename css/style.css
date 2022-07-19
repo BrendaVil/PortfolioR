@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    color: #C0B283;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* <--- --- --- --- --- HEADER --- --- --- --- ---> */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container nav ul{
+    display: flex;
+    padding: 10px;
+}
+
+.container nav ul li{
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 10px;
+    font-size: large;
+}
+
+/* <--- --- --- --- --- MAIN --- --- --- --- ---> */
+main{
+    background-color: #DCD0C0;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio img{
+    margin: 5px 1px 5px 1px;
+    height: 600px;
+    width: 500px;
+}
+
+.images:hover{
+    opacity: 75%;
+}
+
+/* <--- --- --- --- --- FOOTER --- --- --- --- ---> */
+footer{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin: 5px;
+}
