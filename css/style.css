@@ -17,14 +17,14 @@ h1{
     font-size: 2.2rem;
 }
 
-.container{
+#container{
     background-color: #f4f4f4;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.container .title{
+#title{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,12 +32,12 @@ h1{
     margin-top: 10px;
 }
 
-.container nav ul{
+#container nav ul{
     display: flex;
     padding: 10px;
 }
 
-.container nav ul li{
+#container nav ul li{
     justify-content: space-between;
     align-items: flex-end;
     margin-right: 10px;
@@ -49,20 +49,73 @@ main{
     background-color: #DCD0C0;
 }
 
-.portfolio{
+#portfolio{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1em;
 }
 
 
-.portfolio img{
+#portfolio img{
     height: 600px;
     width: 500px;
 }
 
-.images:hover{
+img:hover{
     opacity: 75%;
+}
+
+/* <--- --- --- --- --- VIEWER --- --- --- --- ---> */
+
+#principal-viewer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color:#DCD0C0;
+}
+
+#internal-viewer{
+    width: 100%;
+    height: 100%;
+    border: 2px #f3f3f3 solid;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+button{
+    cursor: pointer;
+    background: transparent;
+    color: #f3f3f3;
+    border: none;
+}
+
+#close{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 3rem;
+}
+
+#back{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 3rem;
+}
+
+#next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 3rem;
 }
 
 /* <--- --- --- --- --- FOOTER --- --- --- --- ---> */

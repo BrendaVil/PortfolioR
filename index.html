@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="title">
+        <div id="container">
+            <div id="title">
                 <h1>BELEN</h1>
                 <h1>PHOTOGRAPHY</h1>
             </div>
@@ -25,19 +25,31 @@
     </header>
     
     <main>
-        <div class="portfolio">
-            <a class="images" href="#"><img src="img/images/Image.jpeg" alt=""></a>
-            <a class="images" href="#"><img src="img/images/Image2.jpeg" alt=""></a>
-            <a class="images" href="#"><img src="img/images/Image3.jpeg" alt=""></a>
-            <a class="images" href="#"><img src="img/images/Image4.jpeg" alt=""></a>
-            <a class="images" href="#"><img src="img/images/Image5.jpeg" alt=""></a>
-            <a class="images" href="#"><img src="img/images/Image6.jpeg" alt=""></a>
-            <a class="images" href="#"><img src="img/images/Image7.jpeg" alt=""></a>
+        <div id="portfolio">
+            <img src="img/images/Image1.jpeg" alt="">
+            <img src="img/images/Image2.jpeg" alt="">
+            <img src="img/images/Image3.jpeg" alt="">
+            <img src="img/images/Image4.jpeg" alt="">
+            <img src="img/images/Image5.jpeg" alt="">
+            <img src="img/images/Image6.jpeg" alt="">
+            <img src="img/images/Image7.jpeg" alt="">
+            <img src="img/images/Image8.jpeg" alt="">
+        </div>
+
+        <div id="principal-viewer">
+            <div id="internal-viewer">
+                <img id="img-active" src="img/images/Image1.jpeg" alt="">
+                <button id="close" type="button">X</button>
+                <button id="next" type="button">></button>
+                <button id="back" type="button"><</button>
+            </div>
         </div>
     </main>
 
     <footer>
         <p>&copy; Belén Photography 2022</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
